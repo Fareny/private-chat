@@ -1,0 +1,54 @@
+.modal__photo {
+    position: fixed;
+    z-index: 2;
+    padding: 30px;
+    background-color: #161B1D;
+    border-radius: 10px;
+}
+
+.modal__photo__preview {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__wrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+}
+
+.send__btn {
+    border: none;
+    padding: 5px;
+    background-color: #70bb6d;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.modal__input {
+    border: 1px solid #ababab;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}
+
+.close__modal__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.modal__photo__preview__img {
+    max-width: 500px;
+    max-height: 640px;
+    border-radius: 10px 10px 0px 0px;
+}

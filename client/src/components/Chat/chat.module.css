@@ -1,0 +1,236 @@
+.main__chat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.logo__icon {
+    margin: auto;
+    width: 100px;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #d5d5d5;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.message__form {
+    background-color: #262A2C;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    width: 500px;
+}
+
+.message__input {
+    border: none;
+    background-color: #161B1D;
+    color: #fff;
+    text-indent: 10px;
+    width: 500px;
+    overflow: scroll;
+    border: 1px solid purple;
+    border-right: none;
+}
+
+.file__input__container {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid purple;
+    border-left: none;
+}
+
+.file__input__label {
+    display: flex;
+    padding: 10px 10px;
+    background-color: #161B1D;
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.btn__wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome__chat {
+    background-color: #4e00a3;
+    margin-top: 20px;
+    color: #d5d5d5;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.message__area {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #262A2C;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+.my__message {
+    display: flex;
+    justify-content: end;
+}
+
+.my__message:last-child {
+    margin-bottom: 5px;
+}
+
+.other__message {
+    display: flex;
+    justify-content: start;
+    word-wrap: break-word;
+    margin-left: 10px;
+}
+
+.other__message:last-child {
+    display: flex;
+    justify-content: start;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.other__message .wrap__message {
+    align-items: start;
+}
+
+.connect__message {
+    color: #d5d5d5;
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+.wrap__message {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 5px;
+}
+
+.message__photo {
+    cursor: pointer;
+    margin-top: 5px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.message {
+    color: #d5d5d5;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: #2f3435;
+    border-radius: 20px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.exit__chat {
+    font-size: 20px;
+    width: 100%;
+    background-color: #ab3838;
+    color: #fff;
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.exit__chat:hover {
+    transform: scale(0.98, 0.98);
+    cursor: pointer;
+}
+
+.glow__on__hover {
+    width: 120px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #d5d5d5;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow__on__hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow__on__hover:active {
+    color: #000
+}
+
+.glow__on__hover:active:after {
+    background: transparent;
+}
+
+.glow__on__hover:hover:before {
+    opacity: 1;
+}
+
+.glow__on__hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #161B1D;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
